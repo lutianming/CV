@@ -25,9 +25,9 @@
 \firstname{陆}
 \familyname{天明}
 \title{个人简历}                      % 可选项、如不需要可删除本行
-\address{南京大学鼓楼校区}{210093 南京}             % 可选项、如不需要可删除本行
-\mobile{15298387084}                         % 可选项、如不需要可删除本行
-\email{lutainming1005@gmail.com}                    % 可选项、如不需要可删除本行
+\address{世纪广场2幢1单元601室}{江苏 太仓}{215400}             % 可选项、如不需要可删除本行
+\mobile{180 0622 0697}                         % 可选项、如不需要可删除本行
+\email{lutianming1005@hotmail.com}                    % 可选项、如不需要可删除本行
 %\extrainfo{附加信息 (可选项)}                  % 可选项、如不需要可删除本行
 \photo[64pt][0.4pt]{picture.jpg}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
 %\quote{引言(可选项)}                           % 可选项、如不需要可删除本行
@@ -48,6 +48,7 @@
 \maketitle
 
 \section{教育背景}
+\cventry{2013--2015}{Diplôme d'ingénieur(硕士)}{Computer Science}{Telecom ParisTech}{法国}{}
 \cventry{2009 -- 2012}{本科}{软件学院}{南京大学}{\textit{rank: top 10\%}}{}  % 第3到第6编码可留白
 
 %\section{毕业论文}
@@ -78,6 +79,11 @@
 % \subsection{其他}
 % \cventry{年 -- 年}{职位}{公司}{城市}{}{说明}
 \section{工作背景}
+\cventry{2014/7--2015/1}{R\&D intern}{Societe Generale Corporate \& Investment Banking}{Paris, France}{}{%
+\begin{itemize}%
+\item Store and analyze market risk data with Big Data technology
+\end{itemize}}
+
 \cventry{2012/7--2012/9}{SDE实习生}{Microsoft}{中国上海}{}{Software development engineer intern\newline{}%
 详细成果:%
 \begin{itemize}%
@@ -89,23 +95,28 @@
 \end{itemize}}
 
 \section{专业技能}
-\cvdoubleitem{Java}{两年，大一大二}{C/C++}{两年，大三时使用较多}
-\cvdoubleitem{Python}{大二开始学习，大三使用较多}{}{}
+\cvitem{Programming}{Python, Scala, Java, C/C++, Lisp}
+\cvitem{Tools}{Linux, Emacs, Git, Hadoop}
+\cvitem{Statistics}{Machine Learning, Data Mining}
+\cvitem{Languages}{Chinese(Mother tongue), English(Fluent), French(Intermediate)}
 
 \section{参与项目}
+\cventry{2015}{Performance Analysis of Spark}{Scala, Hadoop}{}{Télécom ParisTech, Paris}{
+\begin{itemize}
+\item Analyze Spark performance for large scale machine learning tasks under Hadoop clusters.
+\end{itemize}}
+
+\cventry{2014}{Text classification with SVM}{Python(Numpy, Scikit-learn, Pandas)}{}{Télécom ParisTech, Paris}{
+\begin{itemize}
+\item Classify text with Support Vector Machine
+\item Compare the performance with other conventional methods
+\end{itemize}
+}
 \cventry{2011/7-2011/8}{Ipay手机支付系统}{“花旗杯”信息技术应用大赛}{}{}{基于条
   形码识别实现快速支付\newline{}主要工作：数据解析}
 \cventry{2011/11-2012/3}{kinect教学系统}{深度信息图像分析研讨班}{}{}{使用kinect来
   辅助教学\newline{}主要工作：kinect的手势识别接口}
 
-\section{自我评价}
-\cventry{}{}{}{}{}{喜欢自己所涉及的领域，对新鲜事物充满兴趣。学习能力、适应能力强，
-  喜欢具有挑战新的工作。有点内向，不太擅长和人打交道。}
-
-\section{语言技能}
-\cvitemwithcomment{英语6级}{583}{}
-\cvitemwithcomment{GRE}{319+4}{}
-\cvitemwithcomment{TOEFL}{90}{}
 
 % \section{计算机技能}
 % \cvdoubleitem{类别 1}{XXX, YYY, ZZZ}{类别 4}{XXX, YYY, ZZZ}
@@ -113,10 +124,7 @@
 % \cvdoubleitem{类别 3}{XXX, YYY, ZZZ}{类别 6}{XXX, YYY, ZZZ}
 
 \section{个人兴趣}
-\cvitem{编程语言}{\small Lisp}
-\cvitem{机器学习}{\small 手势识别，在ml-class上学习}
-\cvitem{游泳}{}
-\cvitem{动漫}{}
+\cvitem{}{\small 编程语言， 机器学习， 游泳， 滑雪}
 
 
 % \section{其他 1}

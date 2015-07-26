@@ -1,0 +1,176 @@
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{mycv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv 主题
+\moderncvstyle{classic}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+
+% 字符编码
+\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+%\usepackage{CJKutf8}
+
+% 调整页面边距
+\usepackage[scale={0.8, 0.95}]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+
+% 个人信息
+\name{Tianming}{LU}
+\title{}
+%\title{\small Maisel 1 Telecom ParisTech\newline Chambre 107\newline 212, rue de Tolbiac \newline 75013, Paris\newline Tel: 07 51 33 84 51\newline lutianming1005@gmail.com\newline Né le 05/10/1990\newline Nationalité: Chinois}                      % 可选项、如不需要可删除本行
+\address{Maisel 1 Telecom ParisTech}{Chambre 107, 212, rue de Tobliac}{75013 Paris}             % 可选项、如不需要可删除本行
+\phone[mobile]{07 51 33 84 51}                         % 可选项、如不需要可删除本行
+\email{tianming.lu@telecom-paristech.fr}                    % 可选项、如不需要可删除本行
+\social[github]{lutianming}
+\birthday{Né le 05/10/1990}                  % 可选项、如不需要可删除本行
+\nationality{Nationalité: Chinois}
+\photo[64pt][0.4pt]{picture.eps}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\quote{引言(可选项)}                           % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
+\makecvtitle
+
+\section{Formation}
+\cventry{2013 -- 2015}{Diplôme d'ingénieur}{Informatique}{Télécom ParisTech(ENST)}{en cours}{}
+\cventry{2009 -- 2013}{Licence d'informatique}{Institut de
+  Logiciels}{Université de Nankin}{Bac +4}{}  % 第3到第6编码可留白
+\cventry{2009}{Examen d'admission à l'université}{équivalent du Baccalauréat}{}{}{}
+
+\section{Expérience professionnelle}
+\cventry{2012}{SDE Stage}{Microsoft}{Shangkin Chine}{}{Développeur de logiciels
+\begin{itemize}%
+\item construction d'un outil de recherche de tâche pour la FRS(Finances Reporting System) groupe:
+  \begin{itemize}%
+  \item avec SQL Server et C\#
+  \item aide à comprendre le système
+  \item aide à relancement les tâches lorsque les tâches spécifiques ont échoué
+  \end{itemize}
+\end{itemize}}
+
+\section{Projets}
+\cventry{2014}{Classification de texte avec SVM}{Python(Numpy, Scikit-learn, Pandas)}{}{}{
+Télécom ParisTech, Paris
+\begin{itemize}
+\item la mise en œuvre de la classification de texte
+\item comparaison des performances avec d'autres méthodes conventionnelles
+\end{itemize}
+}
+\cventry{2014}{Création d'images à haute dynamique}{Python(Numpy, Python Image Library)}{}{}{
+Télécom ParisTech, Paris
+\begin{itemize}
+\item Création des HDR images a partir des images originales
+\end{itemize}
+}
+\cventry{2013-2014}{www.forumhorizonchine.com}{Python(Flask), HTML/CSS, JavaScript}{}{}{
+L’Association amicale Franco Chinoise de Paristech (AFCP), Paris
+  \begin{itemize}
+  \item réécriture du site avec Flask
+  \item ajout de nouvelles fonctions
+  \end{itemize}
+}
+
+\cventry{2011}{Système de paiement mobile}{Java, Android}{}{}{
+concoure de programmation par Citibank, Chine
+\begin{itemize}
+\item paiement rapide basé sur code à barres avec caméra mobile
+\item communication entre le côté client et côté serveur
+\end{itemize}
+}
+
+\cventry{2012}{Kinect classe}{C++(Qt)}{}{}{
+un projet dans le séminaire de l'image et de l'analyse vidéo avec des informations de profondeur, Nankin Université, Chine
+  \begin{itemize}
+  \item aide aux enseignants avec Kinect
+  \item implémentation de reconnaissance de gestes
+  \end{itemize}
+}
+
+%\section{évaluation personnelle}
+%\cventry{}{}{J'aime ce que j'apprends, et toujours obtenir
+%   intéressé par des nouvelles choses. J'ai la capacité forte d'apprentissage  et l'adaptabilité. Je
+%   préférer les tâches difficiles. Mais mon manque, c'est que je suis un peu introverti et pas très bon à traiter avec %des gens}{}{}{}
+
+\section{Compétences spécifiques}
+\cvitem{Langages}{Java, C/C++, Python, JavaScript, SQL, HTML/CSS, XML, Lisp}
+\cvitem{Logiciels}{Linux, Emacs, Hadoop, Git, Eclipse, Visual Studio}
+\cvitem{Statistiques}{Machine Learning, Data Mining}
+\cvitem{Langues}{Chinois(langue maternelle), Anglais(courant), Français(bonnes notions)}
+% \section{Langues}
+% %\cvitemwithcomment{英语6级}{583}{}
+% %\cvitemwithcomment{GRE}{319+4}{}
+% \cvitemwithcomment{Anglais}{B2}{TOEFL 95}
+% \cvitemwithcomment{Français}{B1}{en France depuis Juillet 2013}
+
+% \section{计算机技能}
+% \cvdoubleitem{类别 1}{XXX, YYY, ZZZ}{类别 4}{XXX, YYY, ZZZ}
+% \cvdoubleitem{类别 2}{XXX, YYY, ZZZ}{类别 5}{XXX, YYY, ZZZ}
+% \cvdoubleitem{类别 3}{XXX, YYY, ZZZ}{类别 6}{XXX, YYY, ZZZ}
+
+\section{Loisirs}
+\cvitem{}{les nouvelles technologies, natation, gymnastique, cinéma(dessin animé)}
+% \section{其他 1}
+% \cvlistitem{项目 1}
+% \cvlistitem{项目 2}
+% \cvlistitem{项目 3}
+
+%\renewcommand{\listitemsymbol}{-}             % 改变列表符号
+
+% \section{其他 2}
+% \cvlistdoubleitem{项目 1}{项目 4}
+% \cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
+% \cvlistdoubleitem{项目 3}{}
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+%\nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+\clearpage
+%\end{CJK}
+
+%-----       letter       ---------------------------------------------------------
+% recipient data
+% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+% \date{January 01, 1984}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+% \makelettertitle
+
+% test
+
+% \makeletterclosing
+
+\end{document}
+
+
+
+%% 文件结尾 `template-zh.tex'.

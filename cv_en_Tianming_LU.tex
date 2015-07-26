@@ -1,35 +1,32 @@
 %%author: Tianming Lu
-%%date: 2012-4-29
-
-
-
+%%date: 2014-01-13
 \documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
-%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
 %\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\firstname{Tianming}
-\familyname{Lu}
-\title{CV}               % optional, remove the line if not wanted
-\address{GuLou Campus of Nanjing University}{210093 Nanjing}    % optional, remove the line if not wanted
-\mobile{0086-15298387084}                     % optional, remove the line if not wanted
-\email{lutianming1005@gmail.com}                          % optional, remove the line if not wanted
+\name{Tianming}{LU}
+%\title{CV}               % optional, remove the line if not wanted
+\address{room 601 unit 1 building 2}{Shiji Square}{215400 Taicang}    % optional, remove the line if not wanted
+\mobile{180 0622 0697}                     % optional, remove the line if not wanted
+\email{lutianming1005@hotmail.com}                          % optional, remove the line if not wanted
+\social[github]{lutianming}
 %\extrainfo{additional information}            % optional, remove the line if not wanted
-\photo[64pt][0.4pt]{picture.jpg}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
-%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+\photo[64pt][0.4pt]{picture.eps}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Search for a 6-month internship}                 % optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -48,8 +45,8 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2009--2012}{Bachelor}{Software Engineering}{Nanjing
-  University}{}{Overall GPA: 86, Rank: 12/185}  % arguments 3 to 6 can be left empty
+\cventry{2013--2015}{Diplôme d'ingénieur}{Computer Science}{Telecom ParisTech}{France}{}
+\cventry{2009--2012}{Bachelor}{Software Engineering}{Software Institute, Nanjing University}{China}{}  % arguments 3 to 6 can be left empty
 
 % \section{Master thesis}
 % \cvitem{title}{\emph{Title}}
@@ -80,30 +77,67 @@
 % \cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
 \section{Experience}
-\cventry{2012/7--2012/9}{SDE Intern}{Microsoft}{Shanghai, China}{}{Software development engineer intern\newline{}%
-Detailed achievements:%
+\cventry{2014/7--2015/1}{R\&D intern}{Societe Generale Corporate \& Investment Banking}{Paris, France}{}{%
 \begin{itemize}%
-\item build a job query tool for the FRS(Finance Reporting System) group:
-  \begin{itemize}%
-  \item help developers understand the system;
-  \item help rerun jobs when jobs fail;
-  \end{itemize}
+\item Store and analyze market risk data with Big Data technology
+\end{itemize}}
+
+\cventry{2012/7--2012/9}{Software development engineer intern}{Microsoft}{Shanghai, China}{}{%
+\begin{itemize}%
+\item Build a job query tool for the FRS(Finance Reporting System) group with SQL Server and C\#
 \end{itemize}}
 
 \section{Projects}
-\cventry{2011/7-2011/8}{Ipay mobile payment system}{}{entry for a competition hold by Citibank}{}{quick payment with
-  barcode from mobile's camera\newline{}my work: data parsing}
-\cventry{2011/11-2012/3}{Kinect Classroom}{}{a project in the seminar of Image and Video Analysis with Depth Information}{}{use Kinect to help teachers\newline{}my work: gesture recognition}
+\cventry{2015}{Performance Analysis of Spark}{Scala, Hadoop}{}{Télécom ParisTech, Paris}{
+\begin{itemize}
+\item Analyze Spark performance for large scale machine learning tasks under Hadoop clusters.
+\end{itemize}}
 
-\section{Languages}
-\cvitemwithcomment{GRE}{319+4}{}
-\cvitemwithcomment{TOEFL}{95}{}
+\cventry{2014}{Text classification with SVM}{Python(Numpy, Scikit-learn, Pandas)}{}{Télécom ParisTech, Paris}{
+\begin{itemize}
+\item Classify text with Support Vector Machine
+\item Compare the performance with other conventional methods
+\end{itemize}
+}
+
+\cventry{2014}{Creation of HDR images}{Python(Python Image Library, Numpy, PyQt), OpenCV}{}{Télécom ParisTech, Paris}{
+\begin{itemize}
+\item Create HDR(High dynamic range) images with multiple original images
+\end{itemize}
+}
+  
+\cventry{2011/7-2011/8}{Ipay mobile payment system}{Java, Android}{}{}{
+  Programming competition by Citibank, China
+  \begin{itemize}
+  	\item Quick payment with bar code from mobile camera
+	\item Implement the communication between the client side and the server side
+  \end{itemize}
+  }
+  
+\cventry{2011/11-2012/3}{Kinect Classroom}{C++(Qt)}{}{}{
+A project in the seminar of Image and Video Analysis with Depth Information, China
+\begin{itemize}
+  \item Use Kinect to track teacher's hand positions
+  \item Implement gesture recognition based on dynamic programming
+\end{itemize}
+}
+
+%\section{Personal evaluation}
+%\cventry{}{}{}{}{}{I like what I am learning,and always get
+%  interested in new things. I have strong learning ability and adaptability. I
+%  prefer those challenging tasks. But my shortage is that I am a little introvert and not very good at dealing with %people}
+\section{Skills}
+\cvitem{Programming}{Python, Scala, Java, C/C++, Lisp}
+\cvitem{Tools}{Linux, Emacs, Git, Hadoop}
+\cvitem{Statistics}{Machine Learning, Data Mining}
+\cvitem{Languages}{Chinese(Mother tongue), English(Fluent), French(Intermediate)}
+%\cvitemwithcomment{CET-6}{583}{}
+%\cvitemwithcomment{GRE}{319+4}{}
+%\cvitemwithcomment{TOEFL}{90}{}
+%\cvitemwithcomment{French}{B2}{}
 
 \section{Interests}
-\cvitem{computer vision}{}
-\cvitem{machine learning}{online machine learning class}
-\cvitem{programming languages}{Python, Lisp}{}
-\cvitem{swimming}{}
+\cvitem{}{New technologies, Travel, Swimming, Gym, Cartoon}
 
 % \section{Extra 1}
 % \cvlistitem{Item 1}
@@ -118,9 +152,9 @@ Detailed achievements:%
 % \cvlistdoubleitem{Item 3}{}
 
 % Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                   % 'publications' is the name of a BibTeX file
 
 % Publications from a BibTeX file using the multibib package
 %\section{Publications}
