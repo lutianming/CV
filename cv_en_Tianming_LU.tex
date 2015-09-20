@@ -10,7 +10,7 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
 \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
@@ -18,14 +18,14 @@
 %\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\name{Tianming}{LU}
+\name{Tianming LU}{\small 陆天明}
 %\title{CV}               % optional, remove the line if not wanted
-\address{room 601 unit 1 building 2}{Shiji Square}{215400 Taicang}    % optional, remove the line if not wanted
+\address{birthday: 05 Oct 1990}{}{Jiangsu Taicang}    % optional, remove the line if not wanted
 \mobile{180 0622 0697}                     % optional, remove the line if not wanted
 \email{lutianming1005@hotmail.com}                          % optional, remove the line if not wanted
 \social[github]{lutianming}
 %\extrainfo{additional information}            % optional, remove the line if not wanted
-\photo[64pt][0.4pt]{picture.eps}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\photo[64pt][0.4pt]{picture.jpg}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Search for a 6-month internship}                 % optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -40,13 +40,13 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
 \section{Education}
 \cventry{2013--2015}{Diplôme d'ingénieur}{Computer Science}{Telecom ParisTech}{France}{}
-\cventry{2009--2012}{Bachelor}{Software Engineering}{Software Institute, Nanjing University}{China}{}  % arguments 3 to 6 can be left empty
+\cventry{2009--2013}{Bachelor}{Software Engineering}{Software Institute, Nanjing University}{China}{}  % arguments 3 to 6 can be left empty
 
 % \section{Master thesis}
 % \cvitem{title}{\emph{Title}}
@@ -77,7 +77,7 @@
 % \cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
 \section{Experience}
-\cventry{2014/7--2015/1}{R\&D intern}{Societe Generale Corporate \& Investment Banking}{Paris, France}{}{%
+\cventry{2014/7--2015/1}{R\&D intern}{Societe Generale Corporate \& Investment Bank}{Paris, France}{}{%
 \begin{itemize}%
 \item Store and analyze market risk data with Big Data technology
 \end{itemize}}
@@ -105,15 +105,15 @@
 \item Create HDR(High dynamic range) images with multiple original images
 \end{itemize}
 }
-  
+
 \cventry{2011/7-2011/8}{Ipay mobile payment system}{Java, Android}{}{}{
   Programming competition by Citibank, China
   \begin{itemize}
-  	\item Quick payment with bar code from mobile camera
-	\item Implement the communication between the client side and the server side
+        \item Quick payment with bar code from mobile camera
+        \item Implement the communication between the client side and the server side
   \end{itemize}
   }
-  
+
 \cventry{2011/11-2012/3}{Kinect Classroom}{C++(Qt)}{}{}{
 A project in the seminar of Image and Video Analysis with Depth Information, China
 \begin{itemize}
@@ -167,7 +167,7 @@ A project in the seminar of Image and Video Analysis with Depth Information, Chi
 
 \clearpage
 
-%\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
 
 

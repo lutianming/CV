@@ -24,11 +24,12 @@
 % 个人信息
 \firstname{陆}
 \familyname{天明}
-\title{个人简历}                      % 可选项、如不需要可删除本行
-\address{世纪广场2幢1单元601室}{江苏 太仓}{215400}             % 可选项、如不需要可删除本行
+\title{简历}                      % 可选项、如不需要可删除本行
+\address{生日 1990-10-05}{江苏 太仓}{}             % 可选项、如不需要可删除本行
 \mobile{180 0622 0697}                         % 可选项、如不需要可删除本行
-\email{lutianming1005@hotmail.com}                    % 可选项、如不需要可删除本行
-%\extrainfo{附加信息 (可选项)}                  % 可选项、如不需要可删除本行
+\email{lutianming1005@hotmail.com}                  %可选项、如不需要可删除本
+                                %% 行
+\social[github]{lutianming}
 \photo[64pt][0.4pt]{picture.jpg}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
 %\quote{引言(可选项)}                           % 可选项、如不需要可删除本行
 
@@ -48,8 +49,9 @@
 \maketitle
 
 \section{教育背景}
-\cventry{2013--2015}{Diplôme d'ingénieur(硕士)}{Computer Science}{Telecom ParisTech}{法国}{}
-\cventry{2009 -- 2012}{本科}{软件学院}{南京大学}{\textit{rank: top 10\%}}{}  % 第3到第6编码可留白
+\cventry{2013--2015}{Diplôme d'ingénieur(硕士)}{Computer Science}{Telecom
+  ParisTech 巴黎高科}{法国}{}
+\cventry{2009--2013}{本科}{软件学院}{南京大学}{\textit{rank: top 10\%}}{}  % 第3到第6编码可留白
 
 %\section{毕业论文}
 %\cvitem{题目}{\emph{题目}}
@@ -79,13 +81,13 @@
 % \subsection{其他}
 % \cventry{年 -- 年}{职位}{公司}{城市}{}{说明}
 \section{工作背景}
-\cventry{2014/7--2015/1}{R\&D intern}{Societe Generale Corporate \& Investment Banking}{Paris, France}{}{%
+\cventry{2014/7--2015/1}{R\&D实习生}{Societe Generale Corporate \& Investment
+  Bank}{法国巴黎}{}{%
 \begin{itemize}%
-\item Store and analyze market risk data with Big Data technology
+\item 使用Big Data相关技术存储和分析市场风险信息
 \end{itemize}}
 
-\cventry{2012/7--2012/9}{SDE实习生}{Microsoft}{中国上海}{}{Software development engineer intern\newline{}%
-详细成果:%
+\cventry{2012/7--2012/9}{SDE实习生}{Microsoft}{中国上海}{}{
 \begin{itemize}%
 \item 为FRS(Finance Reporting System)组构建了一个任务(job)查询工具:
   \begin{itemize}%
@@ -94,29 +96,46 @@
   \end{itemize}
 \end{itemize}}
 
-\section{专业技能}
-\cvitem{Programming}{Python, Scala, Java, C/C++, Lisp}
-\cvitem{Tools}{Linux, Emacs, Git, Hadoop}
-\cvitem{Statistics}{Machine Learning, Data Mining}
-\cvitem{Languages}{Chinese(Mother tongue), English(Fluent), French(Intermediate)}
 
 \section{参与项目}
-\cventry{2015}{Performance Analysis of Spark}{Scala, Hadoop}{}{Télécom ParisTech, Paris}{
+\cventry{2015}{Spark性能分析}{Spark, Hadoop}{}{Telecom ParisTech, Paris}{
 \begin{itemize}
-\item Analyze Spark performance for large scale machine learning tasks under Hadoop clusters.
+\item 分析Spark在Hadoop集群下处理大规模机器学习任务时的性能变化
 \end{itemize}}
 
-\cventry{2014}{Text classification with SVM}{Python(Numpy, Scikit-learn, Pandas)}{}{Télécom ParisTech, Paris}{
+\cventry{2014}{SVM文本分类}{Python(Numpy, Scikit-learn, Pandas)}{}{Telecom ParisTech, Paris}{
 \begin{itemize}
-\item Classify text with Support Vector Machine
-\item Compare the performance with other conventional methods
+\item 使用SVM进行文本分类
+\item 比较SVM与其他机器学习方法的性能差别
 \end{itemize}
 }
-\cventry{2011/7-2011/8}{Ipay手机支付系统}{“花旗杯”信息技术应用大赛}{}{}{基于条
-  形码识别实现快速支付\newline{}主要工作：数据解析}
-\cventry{2011/11-2012/3}{kinect教学系统}{深度信息图像分析研讨班}{}{}{使用kinect来
-  辅助教学\newline{}主要工作：kinect的手势识别接口}
 
+\cventry{2014}{HDR图像}{Python(Python Image Library, Numpy, PyQt), OpenCV}{}{Telecom ParisTech, Paris}{
+  \begin{itemize}
+  \item 使用多张图像创建HDR图像
+  \end{itemize}
+}
+
+\cventry{2011/7-2011/8}{Ipay手机支付系统}{“花旗杯”信息技术应用大赛}{}{}{基于条
+  形码识别实现快速支付
+\begin{itemize}
+\item JSON数据解析
+\end{itemize}
+}
+
+\cventry{2011/11-2012/3}{kinect教学系统}{深度信息图像分析研讨班}{}{}{使用kinect来
+  辅助教学
+\begin{itemize}
+\item 实现kinect的手势识别接口
+\end{itemize}
+}
+
+
+\section{专业技能}
+\cvitem{编程语言}{Python, Scala, Java, C/C++, Lisp}
+\cvitem{工具}{Linux, Emacs, Git, Hadoop}
+\cvitem{统计}{Machine Learning, Data Mining}
+\cvitem{语言}{汉语(母语), 英语, 法语}
 
 % \section{计算机技能}
 % \cvdoubleitem{类别 1}{XXX, YYY, ZZZ}{类别 4}{XXX, YYY, ZZZ}
@@ -124,7 +143,7 @@
 % \cvdoubleitem{类别 3}{XXX, YYY, ZZZ}{类别 6}{XXX, YYY, ZZZ}
 
 \section{个人兴趣}
-\cvitem{}{\small 编程语言， 机器学习， 游泳， 滑雪}
+\cvitem{}{\small 编程语言，新技术，旅行，游泳，滑雪}
 
 
 % \section{其他 1}
@@ -160,3 +179,8 @@
 
 
 %% 文件结尾 `template-zh.tex'.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
