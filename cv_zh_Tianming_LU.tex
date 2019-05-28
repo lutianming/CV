@@ -50,7 +50,11 @@
 
 \section{教育背景}
 \cventry{2013--2015}{Diplôme d'ingénieur(硕士)}{Computer Science}{Telecom
-  ParisTech 巴黎高科}{法国}{}
+  ParisTech 巴黎高科}{法国}{
+  \begin{itemize}
+  \item 连续2年获得企业奖学金
+  \end{itemize}  
+  }
 \cventry{2009--2013}{本科}{软件工程}{南京大学}{}{}  % 第3到第6编码可留白
 
 %\section{毕业论文}
@@ -83,14 +87,14 @@
 \section{工作背景}
 \cventry{2016/03 -- 至今}{高级研发工程师}{星环科技}{上海}{}{%
 \begin{itemize}%
-\item 负责机器学习平台产品设计和研发 (Spring, Spark, Kubernetes)
+\item 负责机器学习平台产品设计和研发，使用Spark, Spring, Tensorflow, Kubernetes等相关技术，从无到有完成新产品的设计开发，不断迭代
   \begin{itemize}%
-  \item 从无到有完成新产品的设计开发，不断迭代
-  \item 实现拖拽式构建机器学习任务的功能
-  \item 定制化Livy实现多用户多任务的Spark执行环境
-  \item 实现Spark与Tensorflow的整合
-  \item 优化Spark模型部署运行速度
-  \item 设计实现基于Docker和Kubernetes的模型版本管理和上线等功能
+  \item 实现拖拽式构建机器学习任务的功能。通过算子逻辑组合构建流程DAG图，后端解析DAG图生产实际执行计划执行对应的机器学习流程
+  \item 定制化Livy实现多用户多任务的Spark执行环境。根据平台需求，修改和扩展Livy的功能，包括资源控制、任务历史记录等等
+  \item 实现Spark与Tensorflow的整合。同一流程DAG图混合Spark SQL逻辑和深度学习逻辑，充分发挥Spark的大数据预处理能力和Tensorflow的深度学习建模能力。
+  \item 优化Spark模型部署运行速度。封装Spark SQL接口，实现对应的无Spark运行环境的接口，保证线上预测功能的性能。
+        REST API响应时间从秒级下降到毫秒级  
+  \item 设计实现基于Docker和Kubernetes的模型版本管理和上线等功能。实现基于Dockerfile的模型CICD功能，从模型文件构建模型镜像。以镜像形式完成跨集群部署功能。
   \end{itemize}
 \end{itemize}}
 
@@ -98,8 +102,8 @@
 \begin{itemize}%
 \item 负责StreamSQL引擎的测试和研发
   \begin{itemize}%
-  \item 实现StreamSQL引擎的自动化单元测试工具
-  \item StreamSQL引擎的PL/SQL性能优化
+  \item 实现StreamSQL引擎的自动化单元测试工具。通过在SQL脚本中添加特定注释并解析来执行单元测试并与预期结果比对
+  \item StreamSQL引擎的PL/SQL性能优化。解析并复用PL/SQL的AST抽象语法树，避免重复解析，通过替换AST节点实现值的更新从而减少计算量
   \end{itemize}
 \end{itemize}}
 
@@ -120,7 +124,7 @@
 
 \section{专业技能}
 \cvitem{编程语言}{Scala, Java, Python, C/C++}
-\cvitem{大数据}{Spark, Hadoop}
+\cvitem{大数据}{Spark, Kafka, HDFS, Hadoop}
 \cvitem{后端}{Spring, Redis, MySQL}
 \cvitem{云}{Docker, Kubernetes}
 \cvitem{工具}{Idea, Git, Linux}
