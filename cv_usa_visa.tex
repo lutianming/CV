@@ -1,0 +1,157 @@
+%%author: Tianming Lu
+%%date: 2014-01-13
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Tianming LU}{\small 陆天明}
+%\title{CV}               % optional, remove the line if not wanted
+\address{birthday: 05 Oct 1990}{}{Jiangsu Taicang}    % optional, remove the line if not wanted
+\mobile{189 1306 8026}                     % optional, remove the line if not wanted
+\email{lutianming1005@hotmail.com}                          % optional, remove the line if not wanted
+\social[github]{lutianming}
+%\extrainfo{additional information}            % optional, remove the line if not wanted
+\photo[64pt][0.4pt]{usa_visa.jpg}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Search for a 6-month internship}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2013--2015}{Diplôme d'ingénieur}{Computer Science}{Telecom ParisTech}{France}{}
+\cventry{2009--2013}{Bachelor}{Software Engineering}{Software Institute, Nanjing University}{China}{}  % arguments 3 to 6 can be left empty
+
+% \section{Master thesis}
+% \cvitem{title}{\emph{Title}}
+% \cvitem{supervisors}{Supervisors}
+% \cvitem{description}{Short thesis abstract}
+
+% \section{Experience}
+% \subsection{Vocational}
+% \cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 1;
+% \item Achievement 2, with sub-achievements:
+%   \begin{itemize}%
+%   \item Sub-achievement (a);
+%   \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%     \begin{itemize}
+%     \item Sub-sub-achievement i;
+%     \item Sub-sub-achievement ii;
+%     \item Sub-sub-achievement iii;
+%     \end{itemize}
+%   \item Sub-achievement (c);
+%   \end{itemize}
+% \item Achievement 3.
+% \end{itemize}}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+% \subsection{Miscellaneous}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Experience}
+\cventry{2019/01 -- Now}{Manager}{Transwarp}{Shanghai}{}{%
+\begin{itemize}%
+\item Responsible for the design and development of Transwarp machine learning platform
+  \begin{itemize}%
+  \item Design a new product from scratch
+  \end{itemize}
+\end{itemize}}
+
+\cventry{2015/09 -- 2018/12}{Development Engineer}{Transwarp}{Shanghai}{}{%
+\begin{itemize}%
+\item Responsible for the development and testing of Transwarp StreamSQL Engine
+  \begin{itemize}%
+  \item Build an automated functional test tool for StreamSQL
+  \item Optimize the performance of PL/SQL execution
+  \end{itemize}
+\end{itemize}}
+
+\cventry{2014/7--2015/1}{R\&D intern}{Societe Generale Corporate \& Investment Bank}{Paris, France}{}{%
+\begin{itemize}%
+\item Store and analyze market risk data with Big Data technology(Hadoop, Spark)
+\end{itemize}}
+
+\cventry{2012/7--2012/9}{Software development engineer intern}{Microsoft}{Shanghai, China}{}{%
+\begin{itemize}%
+\item Build a job query tool for the FRS(Finance Reporting System) group with SQL Server and C\#
+\end{itemize}}
+
+%\section{Personal evaluation}
+%\cventry{}{}{}{}{}{I like what I am learning,and always get
+%  interested in new things. I have strong learning ability and adaptability. I
+%  prefer those challenging tasks. But my shortage is that I am a little introvert and not very good at dealing with %people}
+\section{Skills}
+\cvitem{Programming}{Scala, Java, Python, C/C++}
+\cvitem{Big Data}{Spark, Hadoop}
+\cvitem{Backend}{Spring, Redis, MySQL}
+\cvitem{Cloud}{Docker, Kubernetes}
+\cvitem{Tools}{Idea, Git, Linux}
+\cvitem{Statistics}{Machine Learning, Data Mining}
+\cvitem{Languages}{Chinese(Mother tongue), English(Fluent), French(Intermediate)}
+%\cvitemwithcomment{CET-6}{583}{}
+%\cvitemwithcomment{GRE}{319+4}{}
+%\cvitemwithcomment{TOEFL}{90}{}
+%\cvitemwithcomment{French}{B2}{}
+
+
+% \section{Extra 1}
+% \cvlistitem{Item 1}
+% \cvlistitem{Item 2}
+% \cvlistitem{Item 3}
+
+% \renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
