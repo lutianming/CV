@@ -85,7 +85,15 @@
 % \subsection{其他}
 % \cventry{年 -- 年}{职位}{公司}{城市}{}{说明}
 \section{工作背景}
-\cventry{2016/03 -- 至今}{高级研发工程师}{星环科技}{上海}{}{%
+\cventry{2019/03 -- 至今}{研发经理}{星环科技}{上海}{}{%
+\begin{itemize}%
+\item 负责AI平台多个服务的设计、开发、管理工作
+  \begin{itemize}%
+  \item 设计实现微服务框架，推动产品的微服务化改造，打通产品间的交互，使得整个平台更成体系
+  \item 负责推动从平台产品到解决方案的演进
+  \end{itemize}
+\end{itemize}}
+\cventry{2016/03 -- 2019/03}{高级研发工程师}{星环科技}{上海}{}{%
 \begin{itemize}%
 \item 负责机器学习平台产品设计和研发，使用Spark, Spring, Tensorflow, Kubernetes等相关技术，从无到有完成新产品的设计开发，不断迭代
   \begin{itemize}%
@@ -93,7 +101,7 @@
   \item 定制化Livy实现多用户多任务的Spark执行环境。根据平台需求，修改和扩展Livy的功能，包括资源控制、任务历史记录等等
   \item 实现Spark与Tensorflow的整合。同一流程DAG图混合Spark SQL逻辑和深度学习逻辑，充分发挥Spark的大数据预处理能力和Tensorflow的深度学习建模能力。
   \item 优化Spark模型部署运行速度。封装Spark SQL接口，实现对应的无Spark运行环境的接口，保证线上预测功能的性能。
-        REST API响应时间从秒级下降到毫秒级  
+        模型预测REST API响应时间从秒级下降到毫秒级  
   \item 设计实现基于Docker和Kubernetes的模型版本管理和上线等功能。实现基于Dockerfile的模型CICD功能，从模型文件构建模型镜像。以镜像形式完成跨集群部署功能。
   \end{itemize}
 \end{itemize}}
@@ -114,22 +122,22 @@
 
 \cventry{2012/07--2012/09}{SDE实习生}{Microsoft}{上海}{}{
 \begin{itemize}%
-\item 为FRS(Finance Reporting System)组构建了一个任务(job)查询工具:
-  \begin{itemize}%
-  \item 帮助开发人员了解任务依赖关系;
-  \item 当任务出错时帮助重新执行任务;
-  \end{itemize}
+\item 为FRS(Finance Reporting System)组构建了一个任务(job)查询工具。帮助开发人员了解任务依赖关系，当任务出错时帮助重新执行任务;
 \end{itemize}}
 
 
 \section{专业技能}
-\cvitem{编程语言}{Scala, Java, Python, C/C++}
-\cvitem{大数据}{Spark, Kafka, HDFS, Hadoop}
-\cvitem{后端}{Spring, Redis, MySQL}
-\cvitem{云}{Docker, Kubernetes}
-\cvitem{工具}{Idea, Git, Linux}
-\cvitem{统计}{Machine Learning, Data Mining}
-\cvitem{语言}{汉语(母语), 英语, 法语}
+%\cvitem{编程语言}{Scala, Java, Python}
+%\cvitem{大数据}{Spark, Kafka, HDFS, Hadoop}
+%\cvitem{后端}{Spring, Redis, MySQL}
+%\cvitem{云}{}
+%\cvitem{工具}{}
+%\cvitem{统计}{}
+%\cvitem{语言}{}
+\cvlistdoubleitem{编程语言：Scala, Java, Python}{大数据：Spark, Kafka, HDFS, Hadoop}
+\cvlistdoubleitem{后端：Spring, Redis, MySQL}{云：Docker, Kubernetes}
+\cvlistdoubleitem{工具：Idea, Git, Linux}{统计：Machine Learning, Data Mining}
+\cvlistdoubleitem{语言：汉语(母语), 英语, 法语}{}
 
 % \section{计算机技能}
 % \cvdoubleitem{类别 1}{XXX, YYY, ZZZ}{类别 4}{XXX, YYY, ZZZ}
