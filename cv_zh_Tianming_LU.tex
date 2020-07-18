@@ -27,7 +27,7 @@
 %\title{简历}                      % 可选项、如不需要可删除本行
 \address{生日 1990-10-05}{江苏 太仓}{}             % 可选项、如不需要可删除本行
 \mobile{189 1306 8026}                         % 可选项、如不需要可删除本行
-\email{lutianming1005@hotmail.com}                  %可选项、如不需要可删除本
+\email{tianming.lu@foxmail.com}                  %可选项、如不需要可删除本
                                 %% 行
 \social[github]{lutianming}
 \photo[64pt][0.4pt]{picture.jpg}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
@@ -85,7 +85,15 @@
 % \subsection{其他}
 % \cventry{年 -- 年}{职位}{公司}{城市}{}{说明}
 \section{工作背景}
-\cventry{2019/03 -- 至今}{研发经理}{星环科技}{上海}{}{%
+\cventry{2020/06 -- 至今}{资深研发工程师}{SmartNews}{上海}{}{%
+\begin{itemize}%
+\item 设计实现基于Flink的实时处理平台，为公司业务的实时化迁移提供平台基础
+  \begin{itemize}%
+  \item 设计实现Flink任务的统一提交、管控。提供可视化、多租户等功能，降低批处理任务的迁移门槛
+  \item 负责实时平台与亚马逊AWS、Datadog等第三方服务的整合工作
+  \end{itemize}
+\end{itemize}}
+\cventry{2019/03 --2020/06}{研发经理}{星环科技}{上海}{}{%
 \begin{itemize}%
 \item 负责AI平台多个服务的设计、开发、管理工作
   \begin{itemize}%
@@ -104,25 +112,6 @@
         模型预测REST API响应时间从秒级下降到毫秒级  
   \item 设计实现基于Docker和Kubernetes的模型版本管理和上线等功能。实现基于Dockerfile的模型CICD功能，从模型文件构建模型镜像。以镜像形式完成跨集群部署功能。
   \end{itemize}
-\end{itemize}}
-
-\cventry{2015/09 -- 2016/03}{研发实习生}{星环科技}{上海}{}{%
-\begin{itemize}%
-\item 负责StreamSQL引擎的测试和研发
-  \begin{itemize}%
-  \item 实现StreamSQL引擎的自动化单元测试工具。通过在SQL脚本中添加特定注释并解析来执行单元测试并与预期结果比对
-  \item StreamSQL引擎的PL/SQL性能优化。解析并复用PL/SQL的AST抽象语法树，避免重复解析，通过替换AST节点实现值的更新从而减少计算量
-  \end{itemize}
-\end{itemize}}
-
-\cventry{2014/07--2015/01}{R\&D实习生}{法国兴业银行}{巴黎}{}{%
-\begin{itemize}%
-\item 使用Big Data相关技术（Hadoop, Spark）存储和分析市场风险信息
-\end{itemize}}
-
-\cventry{2012/07--2012/09}{SDE实习生}{Microsoft}{上海}{}{
-\begin{itemize}%
-\item 为FRS(Finance Reporting System)组构建了一个任务(job)查询工具。帮助开发人员了解任务依赖关系，当任务出错时帮助重新执行任务;
 \end{itemize}}
 
 
