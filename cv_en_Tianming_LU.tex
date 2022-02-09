@@ -20,9 +20,9 @@
 % personal data
 \name{Tianming LU}{\small 陆天明}
 %\title{CV}               % optional, remove the line if not wanted
-\address{birthday: 05 Oct 1990}{}{Jiangsu Taicang}    % optional, remove the line if not wanted
+\address{birthday: 05 Oct 1990}{}{Shanghai}    % optional, remove the line if not wanted
 \mobile{189 1306 8026}                     % optional, remove the line if not wanted
-\email{lutianming1005@hotmail.com}                          % optional, remove the line if not wanted
+\email{tianming.lu@foxmail.com}                          % optional, remove the line if not wanted
 \social[github]{lutianming}
 %\extrainfo{additional information}            % optional, remove the line if not wanted
 \photo[64pt][0.4pt]{picture.jpg}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
@@ -77,12 +77,30 @@
 % \cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
 \section{Experience}
-\cventry{2019/03 -- Now}{Development Manager}{Transwarp}{Shanghai}{}{%
+\cventry{2020/10 -- Now}{Architect}{Sangfor}{Shenzhen}{}{%
+\begin{itemize}%
+\item Responsible for the design of cloud-edge AI platform and graph computing platform
+  \begin{itemize}%
+  \item Optimize data preprocessing and model traing logic of AI platform
+  \item Improve cybersecurity threat hunting performance with graph computing
+  \item Design and develop edge inference platform and intelligent video anlytics pipeline
+  \end{itemize}
+\end{itemize}}
+\cventry{2020/06 -- 2020/10}{Senior Software Engineer}{SmartNews}{Shanghai}{}{%
+\begin{itemize}%
+\item Design and develop the Flink steaming management platform from scratch
+  \begin{itemize}%
+  \item Build the frontend and backend
+  \item implement unified multi-tenant job submission and monitoring
+  \item Integrate the platform with thirdparty services like AWS, Datadog, Slack etc 
+  \end{itemize}
+\end{itemize}}
+\cventry{2019/03 -- 2020/06}{Development Manager}{Transwarp}{Shanghai}{}{%
 \begin{itemize}%
 \item Responsible for the design, development of Transwarp machine learning platform and the management of developing process
   \begin{itemize}%
-  \item Design and implement micro-service architecture
-  \item Build business solution from machine learning platform
+  \item Design and implement micro-service architecture to meet different client requirements
+  \item Build business solution based on machine learning platform
   \end{itemize}
 \end{itemize}}
 \cventry{2016/03 -- 2019/03}{Development Engineer}{Transwarp}{Shanghai}{}{%
@@ -91,9 +109,9 @@
   \begin{itemize}%
   \item Design a new product from scratch
   \item Build machine learning task with drag and drop
-  \item Enhance Livy to build a multi-user and multi-task Spark environment
+  \item Enhance Livy to build a multi-tenant and multi-task Spark environment
   \item Integrate Spark with Tensorflow
-  \item Improve model performance after deployment
+  \item Improve model inference performance after deployment
   \item Design and implement model version management and model deployment based on Docker and Kubernetes
   \end{itemize}
 \end{itemize}}
@@ -107,22 +125,22 @@
   \end{itemize}
 \end{itemize}}
 
-\cventry{2014/7--2015/1}{R\&D intern}{Societe Generale Corporate \& Investment Bank}{Paris, France}{}{%
-\begin{itemize}%
-\item Store and analyze market risk data with Big Data technology(Hadoop, Spark)
-\end{itemize}}
-
-\cventry{2012/7--2012/9}{Software development engineer intern}{Microsoft}{Shanghai, China}{}{%
-\begin{itemize}%
-\item Build a job query tool for the FRS(Finance Reporting System) group with SQL Server and C\#
-\end{itemize}}
+%\cventry{2014/7--2015/1}{R\&D intern}{Societe Generale Corporate \& Investment Bank}{Paris, France}{}{%
+%\begin{itemize}%
+%\item Store and analyze market risk data with Big Data technology(Hadoop, Spark)
+%\end{itemize}}
+%
+%\cventry{2012/7--2012/9}{Software development engineer intern}{Microsoft}{Shanghai, China}{}{%
+%\begin{itemize}%
+%\item Build a job query tool for the FRS(Finance Reporting System) group with SQL Server and C\#
+%\end{itemize}}
 
 %\section{Personal evaluation}
 %\cventry{}{}{}{}{}{I like what I am learning,and always get
 %  interested in new things. I have strong learning ability and adaptability. I
 %  prefer those challenging tasks. But my shortage is that I am a little introvert and not very good at dealing with %people}
 \section{Skills}
-\cvlistdoubleitem{Programming: Scala, Java, Python}{Big Data: Spark, Kafka, HDFS, Hadoop}
+\cvlistdoubleitem{Programming: Scala, Java, Python}{Big Data: Spark, Flink, Kafka, HDFS}
 \cvlistdoubleitem{Backend: Spring, Redis, MySQL}{Cloud: Docker, Kubernetes}
 \cvlistdoubleitem{Tools: Idea, Git, Linux}{Statistics: Machine Learning, Data Mining}
 \cvlistdoubleitem{Languages: Chinese(Mother tongue), English(Fluent), French(Intermediate)}{}
